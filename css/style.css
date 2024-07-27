@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+  font-family: "Mulish", sans-serif;
+
+  background-color: black;
+  color: white;
+}
+
+/* shire styles */
+.text-center{
+  text-align: center;
+  
+}
+.container {
+  max-width: 90rem;
+  margin: 0rem auto;
+  border-radius: 1rem;
+  padding: 20px;
+
+}
+
+
+/* Header Section */
+.header-bg
+{
+
+  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+ 
+}
+.nav-option p {
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 6px;
+}
+
+
+h3 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 800;
+  line-height: normal;
+  color: rgb(255, 84, 0);
+
+}
+
+/* nav bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  height: 40px;
+  padding: 0px 20px 0px 10px;
+}
+
+
+.btn-primary {
+  background-color: rgb(255, 38, 38);
+  height: 40px;
+  width: 110px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.nav-option > p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: normal;
+  text-align: center;
+}
+.responsove-nev{
+  display: none;
+  
+
+}
+
+/* Header section banner */
+.header-container{
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+.item-text{
+width: 400px;
+
+}
+.item-text >h1{
+  font-weight: 900;
+  font-size: 2rem;
+}
+.item-img{
+background-image: url("../images/Images\ 2.png");
+
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 600px;
+width: 400px;
+
+
+}
+
+.experience button{
+
+  height: 80px;
+  width: 180px;
+  border-radius: 8px;
+  background: rgba(244, 244, 244, 0.2);
+  padding: 1rem;
+  display: flex;
+  border: none;
+  backdrop-filter: blur(4px);
+  margin-bottom: 60px;
+  color: aliceblue;
+  margin-right: 140px;
+  
+}
+#btn-1{
+margin-left: 300px;
+}
+
+.habits-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.habits-feet img{
+  border-radius: 50%;
+}
+
+
+
+/* Run Section */
+/* .run-container{
+  display: flex;
+
+  background-color: gray;
+}
+.run-text{
+  padding: 20px;
+}
+.run-container img{
+  width: 40%;
+  height: 400px;
+  border-radius: 30px;
+  padding: 20px;
+} */
+
+/* movile screen */
+
+@media screen and (max-width:576px) {
+  .header-container{
+    display: block;
+    width: 80%;
+  }
+
+
+ .responsove-nev{
+  display: block;
+
+ }
+ .navbar-title{
+  display: none;
+ }
+ 
+.item-text{
+  padding: 10px 0px 10px  30px;
+}
+
+
+
+ .experience button{
+  height: 60px;
+  width: 150px;
+  margin-left: 120px;
+
+
+  
+}
+
+/* habits section */
+/* .habits-container{
+  grid-template-columns: repeat(1,1fr);
+} */
+/* Run Section */
+/* .run-container{
+  display: inline-block;
+  justify-content: end;
+  align-items: end;
+}
+.run-container img{
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+  padding: 20px;
+}**/
+
+}
+
+
+
+ @media screen and (min-width:576px) and (max-width:992px) {
+  .header-container{
+    display: block;
+  }
+
+  .navbar-title{
+    gap: 2rem;
+  }
+  .item-text{
+    margin: 0 auto;
+    
+  }
+  .item-img{
+    margin: 0 auto;
+
+  }
+
+/* habits section */
+/* .habits-container{
+  grid-template-columns: repeat(2,1fr);
+} */
+/* Run Section */
+
+/* .run-container img{
+  width: 50%;
+  height: 400px;
+  border-radius: 30px;
+  padding: 20px;
+}
+ */
+
+ }
