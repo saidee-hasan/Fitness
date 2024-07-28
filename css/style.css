@@ -1,12 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+
+
+.text-styles {
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
+
   }
 body {
-  font-family: "Mulish", sans-serif;
-
-  
+  font-family: "Inter", sans-serif;
+  background: black;
   color: white;
 }
 
@@ -28,7 +40,7 @@ body {
 .header-bg
 {
 
-  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+  background: linear-gradient(180.00deg,rgba(86, 212, 32, 0) 100%, rgb(55, 174, 11),);
  
 }
 .nav-option p {
@@ -65,11 +77,22 @@ h3 {
   padding: 0px 20px 0px 10px;
 }
 
+.btn-download{
 
-.btn-primary {
-  background-color: rgb(255, 38, 38);
   height: 40px;
-  width: 110px;
+  width: 160px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.btn-primary {
+  border-radius: 42px;
+
+  background: rgb(230, 83, 60);
+  border: none;
+  height: 40px;
+  width: 160px;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -95,12 +118,23 @@ h3 {
   display: flex;
 }
 .item-text{
-width: 400px;
+width: 500px;
 
+
+}
+.item-text > p{
+  color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
 }
 .item-text >h1{
   font-weight: 900;
   font-size: 2rem;
+
 }
 .item-img{
 background-image: url("../images/Images\ 2.png");
@@ -118,31 +152,60 @@ width: 400px;
 }
 
 .experience button{
-
-  height: 80px;
-  width: 180px;
-  border-radius: 8px;
-  background: rgba(244, 244, 244, 0.2);
-  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
   display: flex;
-  border: none;
-  backdrop-filter: blur(4px);
-  margin-bottom: 60px;
-  color: aliceblue;
-  margin-right: 140px;
+  width: 11rem;
+  height: 4rem;
+
   
 }
-#btn-1{
-margin-left: 300px;
+.experience ,.video-tutorial ,.video-tutorial-2{
+  font-size: 20px;
+  color: white;
+  
 }
+.experience{
+ width: 100%;
+}
+.experience small{
+  color: rgba(239, 237, 232, 0.65);
+font-family: Inter;
+font-size: 10px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+}
+#btn-1{
+  margin-left: 220px;
+  display: block;
 
-.habits-container{
+}
+.video-tutorial-2{
+display: block;
+font-weight: 900;
+letter-spacing: 1px;
+
+
+}
+#btn-2{
+  margin-top: 150px;
+  display: block;
+ 
+ 
+}
+/* .habits-container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
 .habits-feet img{
   border-radius: 50%;
-}
+} */
 
 
 
@@ -164,86 +227,70 @@ margin-left: 300px;
 
 /* movile screen */
 
-@media screen and (max-width:400px) {
-  .header-container{
-    display: block;
-    width: 80%;
-  }
-
-
- .responsove-nev{
+@media screen and (min-width:576px) and (max-width:992px){
+.header-container{
   display: block;
-
- }
- .navbar-title{
-  display: none;
- }
- 
-.item-text{
-  padding: 10px 0px 10px  30px;
 }
-
-
-
- .experience button{
-  height: 60px;
-  width: 150px;
-  margin-left: 120px;
-
-
+.navbar-title{
+  gap: 1rem;
+}
+.item-text{
+  padding-left: 10px;
+  margin: 0 auto;
+}
+.item-img{
+  margin: 0 auto;
+ 
+}
+.experience {
+  width: 100%;
   
 }
-
-/* habits section */
-/* .habits-container{
-  grid-template-columns: repeat(1,1fr);
-} */
-/* Run Section */
-/* .run-container{
-  display: inline-block;
-  justify-content: end;
-  align-items: end;
-}
-.run-container img{
-  width: 90%;
-  height: 400px;
-  border-radius: 30px;
-  padding: 20px;
-}**/
-
+#btn-1{
+ margin-left: 250px;
 }
 
 
 
- @media screen and (min-width:576px) and (max-width:992px) {
+
+
+
+}
+
+
+@media screen and (max-width:576px) {
   .header-container{
     display: block;
   }
-
   .navbar-title{
-    gap: 2rem;
+    display: none;
+  }
+  .responsove-nev{
+    display: block;
   }
   .item-text{
-    margin: 0 auto;
-    
+    width:100%;
   }
   .item-img{
+    width:300px;
+    height: 500px;
     margin: 0 auto;
-
+    margin-top: 20px;
   }
+  .experience button{
+   
+    width: 8rem;
+    height: 4rem;
+ 
+    
+  }
+  #btn-1{
+    margin-left: 150px;
+    margin-top: 80px;
+  }
+  .experience{
+    margin-right: 50px;
+  }
+ 
 
-/* habits section */
-/* .habits-container{
-  grid-template-columns: repeat(2,1fr);
-} */
-/* Run Section */
-
-/* .run-container img{
-  width: 50%;
-  height: 400px;
-  border-radius: 30px;
-  padding: 20px;
 }
- */
-
- }
