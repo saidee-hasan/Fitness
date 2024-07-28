@@ -297,10 +297,11 @@ letter-spacing: 1px;
     
   }
   .header-img{
-    width:300px;
+    width:240px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 0;
   }
   .experience button{
    
