@@ -9,11 +9,13 @@
     margin: 0;
     padding: 0;
 
+
   }
 body {
   font-family: "Inter", sans-serif;
   background: black;
   color: white;
+ 
 
 
 }
@@ -238,6 +240,78 @@ letter-spacing: 1px;
   padding: 20px;
 }
 
+
+/* your Experences */
+.your-exercise img{
+  width: 100%;
+  height: 250px;
+ border-radius: 10px;
+}
+.exercise{
+  position: relative;
+}
+
+.img-name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%,-50%);
+}
+.row-1,.row-2{
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.8fr;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.row-2{
+  grid-template-columns: 1fr 0.7fr 1fr;
+}
+/* BMI Calculator */
+.bmi-chart{
+  background-color: rgb(109, 105, 105);
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+  
+}
+input, select{
+  width: 250px;
+  height: 50px;
+  background-color: rgb(29, 27, 27);
+  color: rgb(185, 177, 177);
+  border-radius: 10px;
+
+}
+
+
+#activity-factor{
+  width: 510px;
+  height: 50px;
+}
+
+form{
+  margin-top: 70px;
+}
+
+ 
+td,
+th {
+  border: 1px solid rgb(255, 255, 255);
+}
+table {
+  border-collapse: collapse;
+  width: 300px;
+  height: 150px;
+  margin-top: 70px;
+}
+
+
+ /* Meet Our Team  */
+ 
+
 /* movile screen */
 
 @media screen and (min-width:576px) and (max-width:992px){
@@ -277,6 +351,38 @@ letter-spacing: 1px;
   
 }
 
+/* BMI Calculator */
+
+
+.bmi-chart{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 50px;
+  
+}
+
+input, select{
+  width: 200px;
+  height: 50px;
+ 
+
+}
+#activity-factor{
+  width: 410px;
+  height: 50px;
+}
+
+
+ /* Meet Our Team  */
+
+ .container-img img{
+   width:250px;
+  padding: 10px;
+  border-radius: 30px;
+
+  
+ }
 
 }
 
@@ -350,5 +456,46 @@ letter-spacing: 1px;
 }
 
 
+
+/*  Trainings and Exercise */
+.exercise-3{
+  display: none;
+}
+.row-1,.row-2{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  gap: 0.3rem;
+
+}
+
+.row-2{
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.your-exercise img{
+  height: 200px;
+  
+}
+/* BMI Calculator */
+
+
+.bmi-chart{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 50px;
+  
+}
+
+input, select{
+  width: 140px;
+  height: 50px;
+ 
+
+}
+#activity-factor{
+  width: 290px;
+  height: 50px;
+}
 
 }
