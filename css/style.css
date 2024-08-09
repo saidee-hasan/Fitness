@@ -283,7 +283,32 @@ body {
   grid-template-columns: 1fr 0.7fr 1fr;
 }
 /* BMI Calculator */
+table, td, th {
+  border: 1px solid;
+}
+input{
+  width: 250px;
+}
+select{
+  width: 255px;
+}
+table {
+ width: 300px;
+border-collapse: collapse;
 
+}
+.bmi-container{
+  background-color: rgba(215, 220, 250, 0.234);
+ 
+}
+.bmi-chart{
+  display: flex;
+  gap: 100px;
+  
+}
+#option-2{
+  width: 513px;
+}
 /* Meet Our Team  */
 
 /* movile screen */
@@ -325,6 +350,15 @@ body {
 
 
   /* BMI Calculator */
+
+
+  .bmi-chart{
+    display: block;
+  
+    
+  }
+ 
+
 }
 
 @media screen and (max-width: 576px) {
@@ -419,4 +453,32 @@ body {
 
 
   /* BMI Calculator */
+  input{
+    width: 150px;
+  }
+  select{
+    width: 155px;
+  }
+  table {
+   width: 300px;
+  border-collapse: collapse;
+  
+  }
+  .bmi-container{
+    background-color: rgba(215, 220, 250, 0.234);
+   
+  }
+  .bmi-chart{
+    display: flex;
+    gap: 100px;
+    
+  }
+  #option-2{
+    width: 313px;
+  }
+  .bmi-chart{
+    display: block;
+    
+    
+  }
 }
