@@ -310,6 +310,44 @@ border-collapse: collapse;
   width: 513px;
 }
 /* Meet Our Team  */
+.team-member{
+  border-radius: 18px;
+background: rgba(255, 255, 255, 0.1);
+}
+.team-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.team img{
+  width: 100%;
+  border-radius: 20px;
+
+
+}
+.team-text{
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+}
+.team{
+  position: relative;
+}
+
+/* Footer */
+.footer{
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 300px;
+}
+.link-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 /* movile screen */
 
@@ -358,6 +396,10 @@ border-collapse: collapse;
     
   }
  
+  /* Footer */
+  .footer-section{
+    display: block;
+  }
 
 }
 
@@ -454,13 +496,13 @@ border-collapse: collapse;
 
   /* BMI Calculator */
   input{
-    width: 150px;
+    width: 120px;
   }
   select{
-    width: 155px;
+    width: 125px;
   }
   table {
-   width: 300px;
+   width: 250px;
   border-collapse: collapse;
   
   }
@@ -470,15 +512,28 @@ border-collapse: collapse;
   }
   .bmi-chart{
     display: flex;
-    gap: 100px;
+
     
   }
   #option-2{
-    width: 313px;
+    width: 255px;
   }
   .bmi-chart{
     display: block;
     
     
   }
+  .team-1{
+    display: grid;
+    grid-template-columns:  1fr;
+   
+  }
+    /* Footer */
+    .footer-section{
+      display: block;
+    }
+    .link-list{
+      display: block;
+    }
 }
+
