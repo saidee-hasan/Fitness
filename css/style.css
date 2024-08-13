@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+
  
 
 }
@@ -76,15 +77,14 @@ body {
   height: 40px;
   padding: 0px 20px 0px 10px;
 }
-.navbar-title > p {
+.navbar-title > a {
   padding: 7px 0px 0px 0px;
   cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+
 }
-.nav-option p {
-  cursor: pointer;
-  color: aliceblue;
-  margin-top: 6px;
-}
+
 
 .nav-bar > h3 {
   font-size: 36px;
@@ -122,7 +122,7 @@ body {
  
   align-items: center;
   text-align: center;
-  width: 90%;
+
   display: grid;
   grid-template-columns: 2fr 1fr;
   
@@ -313,6 +313,7 @@ table,
 td,
 th {
   border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
   
 }
 table{
@@ -353,6 +354,7 @@ input , select{
 
 .bmi-container {
   background: rgb(34, 34, 34);
+  width: 100%;
   
 }
 .bmi-chart {
@@ -390,8 +392,23 @@ grid-template-columns: 1fr 1fr;
 /* Meet Our Team  end */
 
 /* Footer */
-.footer {
+footer {
   background: rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+}
+
+
+.horezental{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+
+.fitness-title > h1{
+  color: rgb(230, 83, 60);
+
 }
 .footer-section {
   display: grid;
@@ -401,8 +418,12 @@ grid-template-columns: 1fr 1fr;
 .link-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+ margin-top: 50px;
 }
-
+.link-list ul li{
+ list-style: none;
+ margin-top: 15px;
+}
 /* Footer  end*/
 /* movile screen */
 
@@ -460,15 +481,16 @@ grid-template-columns: 1fr 1fr;
   }
   .responsive-nev {
     display: block;
+  
   }
   .header-text {
     width: 90%;
-    margin: 20px;
+    margin: 0px;
   }
 
   .header-img {
     width: 290px;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -549,7 +571,6 @@ grid-template-columns: 1fr 1fr;
     display: block;
   }
 
- 
   #option-2{
     width: 100%;
   }
@@ -564,23 +585,18 @@ grid-template-columns: 1fr 1fr;
     padding-left: 13px;
     background: rgba(255, 255, 255, 0.1); 
     padding: 0px ;
+   
 
   }
-  
+  .display-block{
+    display: none;
+  }
+
   .bmi-container {
     background: rgb(34, 34, 34);
     
   }
  
-
-
-
-
-
-
-
-
-
 
   .team-1 {
     display: grid;
