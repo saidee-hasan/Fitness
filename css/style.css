@@ -12,7 +12,6 @@ body {
   font-family: "Inter", sans-serif;
   background: black;
   color: white;
- 
 }
 
 /* shire styles */
@@ -57,6 +56,8 @@ body {
   font-weight: 400;
 }
 /* shire styles end*/
+
+
 
 /* Header Section */
 
@@ -213,6 +214,7 @@ body {
 
 /* Header section banner  end*/
 
+
 /* Run Section */
 .run-container {
   display: flex;
@@ -233,6 +235,7 @@ body {
 
 }
 /* Run Section end */
+
 
 /*  Experences */
 .exercise img {
@@ -308,6 +311,7 @@ body {
 }
 /*  Experences end */
 
+
 /* BMI Calculator */
 table,
 td,
@@ -345,6 +349,9 @@ table {
 }
 select{
   width: 270px;
+
+    color: gray;
+  
 }
 input , select{
   border-radius: 8px;
@@ -383,12 +390,16 @@ grid-template-columns: 1fr 1fr;
 .team-text {
   position: absolute;
   bottom: 20%;
-  left: 10%;
+  margin-left: 30px;
+
 }
 .team {
   position: relative;
 }
 
+.ll{
+  margin-left: 200px;
+}
 /* Meet Our Team  end */
 
 /* Footer */
@@ -427,50 +438,6 @@ footer {
 /* Footer  end*/
 /* movile screen */
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  .header-container {
-    display: block;
-  }
-  .navbar-title {
-    gap: 1rem;
-  }
-  .header-text {
-    padding-left: 10px;
-    margin: 0 auto;
-  }
-  .header-img {
-    margin: 0 auto;
-  }
-  .experience {
-    width: 100%;
-  }
-  #btn-1 {
-    margin-left: 250px;
-  }
-  /* habits-section */
-  .habits-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Run Section */
-
-  .run-container img {
-    width: 50%;
-  }
-
-  /* BMI Calculator */
-  .bmi-chart {
-   display: block;
-    }
-
-
-
-  /* Footer */
-  .footer-section {
-    display: block;
-  }
-}
 
 @media screen and (max-width: 576px) {
   .header-container {
@@ -571,6 +538,9 @@ footer {
     display: block;
   }
 
+  .ll{
+    margin-left: 0px;
+  }
   #option-2{
     width: 100%;
   }
@@ -607,6 +577,54 @@ footer {
     display: block;
   }
   .link-list {
+    display: block;
+  }
+}
+
+
+/* Tab screen */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .header-container {
+    display: block;
+  }
+  .navbar-title {
+    gap: 1rem;
+  }
+  .header-text {
+    padding-left: 10px;
+    margin: 0 auto;
+  }
+  .header-img {
+    margin: 0 auto;
+  }
+  .experience {
+    width: 100%;
+  }
+  #btn-1 {
+    margin-left: 250px;
+  }
+  /* habits-section */
+  .habits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Run Section */
+
+  .run-container img {
+    width: 50%;
+  }
+
+  /* BMI Calculator */
+  .bmi-chart {
+   display: block;
+    }
+
+
+
+  /* Footer */
+  .footer-section {
     display: block;
   }
 }
