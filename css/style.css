@@ -4,10 +4,9 @@
 * {
   margin: 0;
   padding: 0;
-
- 
-
 }
+
+
 body {
   font-family: "Inter", sans-serif;
   background: black;
@@ -397,7 +396,7 @@ grid-template-columns: 1fr 1fr;
   position: relative;
 }
 
-.ll{
+.bmi-text{
   margin-left: 200px;
 }
 /* Meet Our Team  end */
@@ -538,7 +537,7 @@ footer {
     display: block;
   }
 
-  .ll{
+  .bmi-text{
     margin-left: 0px;
   }
   #option-2{
